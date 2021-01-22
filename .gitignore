@@ -1,2 +1,8 @@
+# DBLP files.
 *.xml
 *.dtd
+*.csv
+
+# Development environment.
+/venv
+/.vscode
