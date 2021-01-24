@@ -3,6 +3,9 @@
 *.dtd
 *.csv
 
+# Downloaded papers
+downloaded_papers/*.pdf
+
 # Development environment.
 /venv
 /.vscode
