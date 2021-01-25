@@ -16,6 +16,10 @@ for paper_name in os.listdir(PAPER_DIRECTORY):
         total = total + 1
         paper_obj = parser.from_file(os.path.join(PAPER_DIRECTORY, paper_name))
         paper_content = paper_obj['content']
+
+        if paper_content is None or paper_content == "":
+            print(f"WARNING: file {os.path.join(PAPER_DIRECTORY, paper_name)} empty!")
+            continue
         
         # 'Robot Operating System' in searched as case insensitive
         if re.search('Robot Operating System', paper_content, re.IGNORECASE):
