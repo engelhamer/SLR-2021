@@ -1674,66 +1674,65 @@ while len(papers) > 0:
     file_title = current_paper[0].replace('/', '@')
 
     if not os.path.exists(f'{PAPER_DIRECTORY}/{file_title}.pdf'):
-        # print('='*80)
-        # print(f'Looking up {current_paper[0]}')
-        print(file_title, current_paper[1])
-        # try:
-        #     if 'doi.org/' in current_paper[1]:
-        #         print(f'Retrieving full text from doi: {current_paper[1]}')
-        #         r = opener.open(current_paper[1])
-        #         link = r.headers['Link'].split(', ')[1].split('; ')[0][1:-1]
-        #         if 'ieeexplore' in link and '-aam.pdf' in link:
-        #             print('Linkie:', link)
-        #             ieee_id = link.split('-aam.pdf')[0][-7:]
-        #             print(ieee_id)
-        #             link = f'https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber={ieee_id}'
-        #         elif 'xplorestaging' in link:
-        #             ieee_id = link.split('=')[-1]
-        #             link = f'https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber={ieee_id}'
-        #         elif 'elsevier' in link:
-        #             pii = link.split('PII:')[-1][:17]
-        #             link = f'https://www.sciencedirect.com/science/article/pii/{pii}/pdf'
-        #     else:
-        #         link = current_paper[1]
-        #     print(f'Going to download from link: {link}')
+        print('='*80)
+        print(f'Looking up {current_paper[0]}')
+        try:
+            if 'doi.org/' in current_paper[1]:
+                print(f'Retrieving full text from doi: {current_paper[1]}')
+                r = opener.open(current_paper[1])
+                link = r.headers['Link'].split(', ')[1].split('; ')[0][1:-1]
+                if 'ieeexplore' in link and '-aam.pdf' in link:
+                    print('Linkie:', link)
+                    ieee_id = link.split('-aam.pdf')[0][-7:]
+                    print(ieee_id)
+                    link = f'https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber={ieee_id}'
+                elif 'xplorestaging' in link:
+                    ieee_id = link.split('=')[-1]
+                    link = f'https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber={ieee_id}'
+                elif 'elsevier' in link:
+                    pii = link.split('PII:')[-1][:17]
+                    link = f'https://www.sciencedirect.com/science/article/pii/{pii}/pdf'
+            else:
+                link = current_paper[1]
+            print(f'Going to download from link: {link}')
 
-        #     # browser.implicitly_wait(5)
-        #     response = browser.get(link)
+            # browser.implicitly_wait(5)
+            response = browser.get(link)
 
-        #     print(f'Awaiting download')
+            print(f'Awaiting download')
 
-        #     while True:
-        #         # Wait a bit
-        #         time.sleep(0.5)
+            while True:
+                # Wait a bit
+                time.sleep(0.5)
 
-        #         if not os.path.isdir(f'{PAPER_DIRECTORY}/new_downloads'):
-        #             raise FileNotFoundError(f'No PDF could be downloaded for {current_paper[0]}')
+                if not os.path.isdir(f'{PAPER_DIRECTORY}/new_downloads'):
+                    raise FileNotFoundError(f'No PDF could be downloaded for {current_paper[0]}')
 
-        #         downloaded_files = os.listdir(f'{PAPER_DIRECTORY}/new_downloads')
+                downloaded_files = os.listdir(f'{PAPER_DIRECTORY}/new_downloads')
 
-        #         # Check if a downloaded file exists
-        #         if len(downloaded_files) == 1:
-        #             extension = downloaded_files[0].split('.')[-1].lower()
+                # Check if a downloaded file exists
+                if len(downloaded_files) == 1:
+                    extension = downloaded_files[0].split('.')[-1].lower()
 
-        #             # If there is still a download in progress, keep waiting.
-        #             if extension == 'crdownload':
-        #                 continue
-        #             # If the PDF is downloaded, move it to folder using db name.
-        #             elif extension == 'pdf':
-        #                 os.rename(f'{PAPER_DIRECTORY}/new_downloads/{downloaded_files[0]}', f'{PAPER_DIRECTORY}/{file_title}.pdf')
-        #                 print(f'Download success!')
-        #                 break
-        #             else:
-        #                 raise Exception(f'Invalid file type for {current_paper[0]}')
-        #         elif len(downloaded_files) == 0:
-        #             raise FileNotFoundError(f'No PDF could be downloaded for {current_paper[0]}')
-        #         else:
-        #             raise Exception(f'Too many files for {current_paper[0]}')
+                    # If there is still a download in progress, keep waiting.
+                    if extension == 'crdownload':
+                        continue
+                    # If the PDF is downloaded, move it to folder using db name.
+                    elif extension == 'pdf':
+                        os.rename(f'{PAPER_DIRECTORY}/new_downloads/{downloaded_files[0]}', f'{PAPER_DIRECTORY}/{file_title}.pdf')
+                        print(f'Download success!')
+                        break
+                    else:
+                        raise Exception(f'Invalid file type for {current_paper[0]}')
+                elif len(downloaded_files) == 0:
+                    raise FileNotFoundError(f'No PDF could be downloaded for {current_paper[0]}')
+                else:
+                    raise Exception(f'Too many files for {current_paper[0]}')
 
 
-        # except Exception as e:
-        #     print(f'Something went wrong for {current_paper[0]}: {e}')
-        #     papers.append(current_paper)
+        except Exception as e:
+            print(f'Something went wrong for {current_paper[0]}: {e}')
+            papers.append(current_paper)
 
         if os.path.isdir(f'{os.getcwd()}/{PAPER_DIRECTORY}/new_downloads'):
             shutil.rmtree(f'{os.getcwd()}/{PAPER_DIRECTORY}/new_downloads')
