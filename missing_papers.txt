@@ -1,0 +1,78 @@
+INVALID URL FROM CROSSREF, DOWNLOADED MANUALLY:
+conf/icst/TimperleyAKHG18
+conf/repeval/GulatiA17
+conf/issta/HildebrandtEBD20
+conf/ecsa/OrtizPAAS07
+conf/saso/Khaluf17
+conf/icse/AskarpourMBBP20
+conf/icse/SantosNPAJ20
+conf/iceccs/ChoKKP12
+journals/tcyb/WenSBGH20
+journals/scpe/NtikaKS14
+journals/trob/FormosaPER20
+journals/trob/LoseyO18
+journals/tcos/MaidiMBO13
+
+INVALID DOI, DOWNLOADED MANUALLY:
+conf/ssrr/IslamANIS20 https://doi.org/10.1109/SSRR50563.2020.9292639
+conf/ssrr/YangP20 https://doi.org/10.1109/SSRR50563.2020.9292570
+conf/ssrr/ShirsatEB20 https://doi.org/10.1109/SSRR50563.2020.9292589
+conf/ssrr/MitriakovPNG20 https://doi.org/10.1109/SSRR50563.2020.9292594
+conf/ssrr/SirineniTRK20 https://doi.org/10.1109/SSRR50563.2020.9292636
+conf/ssrr/Tadokoro20 https://doi.org/10.1109/SSRR50563.2020.9292587
+conf/ssrr/ElangovanGCL20 https://doi.org/10.1109/SSRR50563.2020.9292571
+conf/ssrr/PappasCENS20 https://doi.org/10.1109/SSRR50563.2020.9292585
+conf/ssrr/MandowSPG20 https://doi.org/10.1109/SSRR50563.2020.9292633
+conf/ssrr/PortugalAC20 https://doi.org/10.1109/SSRR50563.2020.9292638
+conf/ssrr/AnsariMFR20 https://doi.org/10.1109/SSRR50563.2020.9292605
+conf/ssrr/BaptistaMMM20 https://doi.org/10.1109/SSRR50563.2020.9292619
+conf/ssrr/FaniadisA20 https://doi.org/10.1109/SSRR50563.2020.9292575
+conf/ssrr/HingstonMBL20 https://doi.org/10.1109/SSRR50563.2020.9292581
+conf/ssrr/BuzzattoL20 https://doi.org/10.1109/SSRR50563.2020.9292586
+conf/ssrr/GerezCL20 https://doi.org/10.1109/SSRR50563.2020.9292622
+conf/ssrr/Murphy20 https://doi.org/10.1109/SSRR50563.2020.9292627
+conf/ssrr/CheeH20 https://doi.org/10.1109/SSRR50563.2020.9292628
+conf/ssrr/MoralesDM20 https://doi.org/10.1109/SSRR50563.2020.9292590
+conf/ssrr/PatchouAGGTW20 https://doi.org/10.1109/SSRR50563.2020.9292584
+conf/ssrr/ConteLF20 https://doi.org/10.1109/SSRR50563.2020.9292625
+conf/ssrr/Corke20 https://doi.org/10.1109/SSRR50563.2020.9292573
+conf/ssrr/FabianKS20 https://doi.org/10.1109/SSRR50563.2020.9292574
+conf/ssrr/VPP20 https://doi.org/10.1109/SSRR50563.2020.9292588
+conf/ssrr/Marques20 https://doi.org/10.1109/SSRR50563.2020.9292634
+journals/trob/CannataM08 https://doi.org/10.1109/TRO.2007.906270
+
+FULL PROCEEDINGS ISO PAPER, NOT DOWNLOADED:
+conf/ssrr/2020 https://doi.org/10.1109/SSRR50563.2020
+conf/ssrr/2019 https://ieeexplore.ieee.org/xpl/conhome/8843552/proceeding
+conf/ssrr/2018 https://ieeexplore.ieee.org/xpl/conhome/8457068/proceeding
+conf/ssrr/2017 https://ieeexplore.ieee.org/xpl/conhome/8076857/proceeding
+conf/ssrr/2016 https://ieeexplore.ieee.org/xpl/conhome/7774253/proceeding
+conf/ssrr/2015 https://ieeexplore.ieee.org/xpl/conhome/7437564/proceeding
+conf/ssrr/2014 https://ieeexplore.ieee.org/xpl/conhome/7002491/proceeding
+conf/ssrr/2013 https://ieeexplore.ieee.org/xpl/conhome/6708581/proceeding
+conf/ssrr/2012 https://ieeexplore.ieee.org/xpl/conhome/6520954/proceeding
+conf/icse/2019rose https://ieeexplore.ieee.org/xpl/conhome/8821357/proceeding
+conf/icse/2018rose http://dl.acm.org/citation.cfm?id=3196558
+
+PAYWALL SPRINGER, NOT DOWNLOADED:
+conf/rev/ZalewskiG17 https://doi.org/10.1007/978-3-319-64352-6_38
+conf/rev/VernerCFRRB17 https://doi.org/10.1007/978-3-319-64352-6_29
+conf/rev/VernerRCYFR18 https://doi.org/10.1007/978-3-319-95678-7_67
+conf/rev/VernerG17 https://doi.org/10.1007/978-3-319-64352-6_34
+conf/rev/ZubiaAMORH17 https://doi.org/10.1007/978-3-319-64352-6_33
+conf/rev/BuitragoCPJVRO20 https://doi.org/10.1007/978-3-030-52575-0_14
+conf/rev/DonadioFLV17 https://doi.org/10.1007/978-3-319-64352-6_91
+conf/icseng/LezhninaTZ14 https://doi.org/10.1007/978-3-319-08422-0_10
+conf/icseng/ES14 https://doi.org/10.1007/978-3-319-08422-0_104
+
+OUTSIDE OF SUBSCRIPTION IEEE, NOT DOWNLOADED:
+journals/trob/Tchon08 https://doi.org/10.1109/TRO.2008.2006240
+
+PAYWALL INFORMSPUBSONLINE, NOT DOWNLOADED:
+journals/transci/ZouKX18 https://doi.org/10.1287/trsc.2017.0786
+journals/transci/AzadehKR19 https://doi.org/10.1287/trsc.2018.0873
+journals/transci/AzadehRK19 https://doi.org/10.1287/trsc.2018.0883
+journals/transci/WeidingerBB18 https://doi.org/10.1287/trsc.2018.0826
+
+NO DOI PROVIDED, NOT DOWNLOADED:
+conf/modelsward/Assmann17
