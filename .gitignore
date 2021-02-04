@@ -3,8 +3,9 @@
 *.dtd
 *.csv
 
-# Downloaded papers
+# Downloaded paper documents
 downloaded_papers
+selected_papers
 
 # Development environment.
 /venv
