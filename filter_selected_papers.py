@@ -55,5 +55,7 @@ for current_paper in selected_papers:
         continue
 
     (venue, name) = current_paper.split('/')[1:]
+    authors = name[:-2]
+    year = f'20{name[-2:]}'
     copyfile(f'{DOWNLOAD_DIRECTORY}/{file_title}.pdf',
-             f'{FILTER_DIRECTORY}/{venue.upper()}_{name}.pdf')
+             f'{FILTER_DIRECTORY}/{venue.upper()}_{authors.upper()}_{year}.pdf')
