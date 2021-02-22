@@ -10,3 +10,4 @@ selected_papers
 # Development environment.
 /venv
 /.vscode
+/.idea
