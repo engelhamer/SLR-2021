@@ -11,3 +11,6 @@ selected_papers
 /venv
 /.vscode
 /.idea
+
+#Checkpoints
+/.ipynb_checkpoints
