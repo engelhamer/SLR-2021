@@ -12,5 +12,6 @@ selected_papers
 /.vscode
 /.idea
 
-#Checkpoints
+# Notebook items
 /.ipynb_checkpoints
+/figures
