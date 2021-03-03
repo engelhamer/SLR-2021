@@ -13,5 +13,6 @@ scripts/selected_papers
 /.idea
 
 # Notebook items
+.ipynb_checkpoints
 data_analysis/.ipynb_checkpoints
 data_analysis/figures
