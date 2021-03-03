@@ -1,11 +1,11 @@
 # DBLP files.
-*.xml
-*.dtd
-*.csv
+scripts/*.xml
+scripts/*.dtd
+scripts/*.csv
 
 # Downloaded paper documents
-downloaded_papers
-selected_papers
+scripts/downloaded_papers
+scripts/selected_papers
 
 # Development environment.
 /venv
@@ -13,5 +13,5 @@ selected_papers
 /.idea
 
 # Notebook items
-/.ipynb_checkpoints
-/figures
+data_analysis/.ipynb_checkpoints
+data_analysis/figures
